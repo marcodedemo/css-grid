@@ -15,6 +15,7 @@
 <div class="container">
 
   <div class="box yellow">1</div>
+  <div class="box pink">3</div>
   <div class="box purple">2</div>
   <div class="box pink">3</div>
   <div class="box blue">4</div>
@@ -38,7 +39,7 @@
 .container{
 
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 100px 300px 100px 100px;
   gap: 20px;
 
@@ -55,6 +56,7 @@
 
 .purple{
   background-color: #800080;
+  grid-column: 2;
   grid-row: 2 / 4;
 }
 
